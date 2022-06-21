@@ -19,7 +19,7 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/back_arrow_right"
+                android:id="@+id/cv_arrowl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -39,7 +39,7 @@
                 android:text="AGENDA"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                app:layout_constraintStart_toEndOf="@+id/back_arrow_right"
+                app:layout_constraintStart_toEndOf="@+id/cv_arrowl"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.cardview.widget.CardView

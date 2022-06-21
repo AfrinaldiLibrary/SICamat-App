@@ -51,7 +51,7 @@ class NewsFragment : Fragment() {
                 if (index == list.size)
                     index = 0
                 Log.e("Runnable,", "$index")
-//                binding.viewPager.setCurrentItem(index)
+                binding.viewPager.setCurrentItem(index)
                 index++
                 handler.postDelayed(this,2000)
             }
@@ -87,7 +87,7 @@ class NewsFragment : Fragment() {
             }
         })
 
-        handler.post(runnable)
+
     }
 
     private fun selectedDot(position: Int) {
@@ -113,6 +113,16 @@ class NewsFragment : Fragment() {
             binding.dotsIndicator.addView(dots[i])
 
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        handler.post(runnable)
+    }
+
+    override fun onStop() {
+        super.onStop()
+        handler.removeCallbacks(runnable)
     }
 
     override fun onDestroyView() {
