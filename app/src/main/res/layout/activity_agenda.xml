@@ -18,13 +18,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/back_arrow_right"
-                android:layout_width="26dp"
-                android:layout_height="26dp"
+            <ImageButton
+                android:id="@+id/cv_arrowl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="35dp"
-                android:src="@drawable/ic_arrow_right"
+                android:background="@drawable/ic_arrow_black"
+                android:rotation="180"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,7 +39,7 @@
                 android:text="AGENDA"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                app:layout_constraintStart_toEndOf="@+id/back_arrow_right"
+                app:layout_constraintStart_toEndOf="@+id/cv_arrowl"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.cardview.widget.CardView

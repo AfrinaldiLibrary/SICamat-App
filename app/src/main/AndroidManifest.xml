@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bandungwetan.sicamat" >
+    package="com.bandungwetan.sicamat">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,7 +11,13 @@
         android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SiCamat" >
+        android:theme="@style/Theme.SiCamat">
+        <activity
+            android:name=".ui.activity.penduduk.JumlahPendudukActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.penduduk.PendudukActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.activity.agenda.AgendaActivity"
             android:exported="false" />
