@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail_grafik"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="3dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/contoh_gr">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/detail_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="DETAIL"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/detail_warna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Warna"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_judul" />
+
+        <ImageView
+            android:id="@+id/indikator_ungu"
+            android:layout_width="47dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="37dp"
+            android:background="@drawable/indikator_ungu"
+            app:layout_constraintStart_toStartOf="@+id/detail_warna"
+            app:layout_constraintTop_toBottomOf="@+id/detail_warna" />
+
+        <ImageView
+            android:id="@+id/indikator_oren"
+            android:layout_width="47dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="37dp"
+            android:background="@drawable/indikator_oren"
+            app:layout_constraintStart_toStartOf="@+id/indikator_ungu"
+            app:layout_constraintTop_toBottomOf="@+id/indikator_ungu" />
+
+        <TextView
+            android:id="@+id/detail_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Nama"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/detail_warna"
+            app:layout_constraintTop_toTopOf="@+id/detail_warna" />
+
+        <TextView
+            android:id="@+id/detail_nama1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Perempuan"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/detail_nama"
+            app:layout_constraintTop_toBottomOf="@+id/detail_nama" />
+
+        <TextView
+            android:id="@+id/detail_nama2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Laki-Laki"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/detail_nama1"
+            app:layout_constraintTop_toBottomOf="@+id/detail_nama1" />
+
+        <TextView
+            android:id="@+id/detail_jumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Jumlah"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/detail_nama" />
+
+        <TextView
+            android:id="@+id/detail_jumlah1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="14.032"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/detail_jumlah"
+            app:layout_constraintTop_toBottomOf="@+id/detail_jumlah" />
+
+        <TextView
+            android:id="@+id/detail_jumlah2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="13.032"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/detail_jumlah1"
+            app:layout_constraintTop_toBottomOf="@+id/detail_jumlah1" />
+
+        <View
+            android:id="@+id/garis"
+            android:layout_width="327dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/detail_jumlah2"
+            app:layout_constraintStart_toStartOf="@+id/indikator_oren"
+            app:layout_constraintTop_toBottomOf="@+id/indikator_oren" />
+
+        <TextView
+            android:id="@+id/detail_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Total"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/detail_nama2"
+            app:layout_constraintTop_toBottomOf="@+id/garis" />
+
+        <TextView
+            android:id="@+id/hasil_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="26.00"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/detail_jumlah2"
+            app:layout_constraintTop_toBottomOf="@+id/garis" />
+
+        <TextView
+            android:id="@+id/link_tree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="https://bandung.go.id"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/indikator_oren"
+            app:layout_constraintTop_toBottomOf="@+id/detail_total" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

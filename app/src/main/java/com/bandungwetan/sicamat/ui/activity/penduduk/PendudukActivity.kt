@@ -22,7 +22,14 @@ class PendudukActivity : AppCompatActivity(), View.OnClickListener {
         lightStatusBar(window)
         
         binding.cardJp.setOnClickListener(this)
-        
+        binding.cardDpp.setOnClickListener(this)
+        binding.cardKp.setOnClickListener(this)
+        binding.cardLpp.setOnClickListener(this)
+        binding.cardPmk.setOnClickListener(this)
+        binding.cardPmku.setOnClickListener(this)
+        binding.cardPmus.setOnClickListener(this)
+        binding.cardRjmk.setOnClickListener(this)
+
         val ArrowOpen : ImageButton = findViewById(R.id.cv_arrowl_penduduk)
         ArrowOpen.setOnClickListener(){
             onBackPressed()
@@ -35,35 +42,34 @@ class PendudukActivity : AppCompatActivity(), View.OnClickListener {
                 val intent = Intent(this, JumlahPendudukActivity::class.java)
                 startActivity(intent)
             }
-//            R.id.card_dpp -> {
-//                val intent = Intent(this, AdzanActivity::class.java)
-//                startActivity(intent)
-//            }
-//            R.id.card_kp -> {
-//                val intent = Intent(this, AdzanActivity::class.java)
-//                startActivity(intent)
-//            }
-//            R.id.card_lpp -> {
-//                val intent = Intent(this, AdzanActivity::class.java)
-//                startActivity(intent)
-//            }
-//            R.id.card_pmk -> {
-//                val intent = Intent(this, AdzanActivity::class.java)
-//                startActivity(intent)
-//            }
-//            R.id.card_pmku -> {
-//                val intent = Intent(this, AdzanActivity::class.java)
-//                startActivity(intent)
-//            }
-//            R.id.card_pmus -> {
-//                val intent = Intent(this, AdzanActivity::class.java)
-//                startActivity(intent)
-//            }
-//            R.id.card_rjmk -> {
-//                val intent = Intent(this, AdzanActivity::class.java)
-//                startActivity(intent)
-//            }
-
+            R.id.card_dpp -> {
+                val intent = Intent(this, LajuPertumbuhanActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.card_kp -> {
+                val intent = Intent(this, DistribusiPersentasiActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.card_lpp -> {
+                val intent = Intent(this, KepadatanPendudukActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.card_pmk -> {
+                val intent = Intent(this, RasioJenisActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.card_pmku -> {
+                val intent = Intent(this, PendudukUmurdanGenderActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.card_pmus -> {
+                val intent = Intent(this, PendudukkelUmurActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.card_rjmk -> {
+                val intent = Intent(this, PendudukUsiaSekolahActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 

@@ -6,7 +6,7 @@ import android.widget.ImageButton
 import com.bandungwetan.sicamat.R
 import com.bandungwetan.sicamat.lightStatusBar
 
-class JumlahPendudukActivity : AppCompatActivity() {
+class DistribusiPersentasiActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_grafik)
@@ -18,5 +18,6 @@ class JumlahPendudukActivity : AppCompatActivity() {
         ArrowOpen.setOnClickListener(){
             onBackPressed()
         }
+
     }
 }
