@@ -12,6 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SiCamat">
         <activity
+            android:name=".SosialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.penduduk.PendudukUsiaSekolahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.penduduk.PendudukUmurdanGenderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.penduduk.PendudukkelUmurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.penduduk.RasioJenisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.penduduk.KepadatanPendudukActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.penduduk.DistribusiPersentasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.penduduk.LajuPertumbuhanActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.activity.penduduk.JumlahPendudukActivity"
             android:exported="false" />
         <activity
