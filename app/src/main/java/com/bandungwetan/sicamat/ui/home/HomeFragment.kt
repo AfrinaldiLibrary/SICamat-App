@@ -10,7 +10,11 @@ import com.bandungwetan.sicamat.R
 import com.bandungwetan.sicamat.databinding.FragmentHomeBinding
 import com.bandungwetan.sicamat.ui.activity.adzan.AdzanActivity
 import com.bandungwetan.sicamat.ui.activity.agenda.AgendaActivity
+import com.bandungwetan.sicamat.ui.activity.covid.CovidActivity
+import com.bandungwetan.sicamat.ui.activity.ipe.IpeActivity
 import com.bandungwetan.sicamat.ui.activity.penduduk.PendudukActivity
+import com.bandungwetan.sicamat.ui.activity.pkpk.PkPkActivity
+import com.bandungwetan.sicamat.ui.activity.sosial.SosialActivity
 
 class HomeFragment : Fragment(), View.OnClickListener {
 
@@ -32,6 +36,10 @@ class HomeFragment : Fragment(), View.OnClickListener {
         binding.cvAdzan.setOnClickListener(this)
         binding.cvAgenda.setOnClickListener(this)
         binding.cvPenduduk.setOnClickListener(this)
+        binding.cvSosial.setOnClickListener((this))
+        binding.cvPkpk.setOnClickListener((this))
+        binding.cvIpe.setOnClickListener((this))
+        binding.cvCovid.setOnClickListener((this))
     }
 
 
@@ -52,6 +60,22 @@ class HomeFragment : Fragment(), View.OnClickListener {
             }
             R.id.cv_penduduk -> {
                 val intent = Intent(activity, PendudukActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.cv_sosial -> {
+                val intent = Intent(activity, SosialActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.cv_ipe -> {
+                val intent = Intent(activity, IpeActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.cv_pkpk -> {
+                val intent = Intent(activity, PkPkActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.cv_covid -> {
+                val intent = Intent(activity, CovidActivity::class.java)
                 startActivity(intent)
             }
         }

@@ -8,12 +8,33 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SiCamat">
+        android:theme="@style/Theme.SiCamat"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name=".SosialActivity"
+            android:name=".ui.activity.covid.CovidActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.ipe.IpeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.pkpk.PkPkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.sosial.JumlahMuridActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.sosial.JumlahGuruActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.sosial.JumlahSekolahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.sosial.JumlahMuridGuruActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.sosial.SosialActivity"
             android:exported="false" />
         <activity
             android:name=".ui.activity.penduduk.PendudukUsiaSekolahActivity"
@@ -50,17 +71,17 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"
-            android:label="@string/title_activity_main" />
-        <activity
-            android:name=".ui.activity.login.LoginActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.activity.login.LoginActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
